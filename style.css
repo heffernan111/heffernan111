@@ -269,30 +269,47 @@ section h2 {
   text-decoration: underline;
 }
 
-.expedition {
-  margin-bottom: 3rem;
-}
-
 .expedition-block {
-  margin-bottom: 3rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #444;
+  background: #111;
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .expedition-block img {
   width: 100%;
-  max-width: 700px;
-  height: auto;
+  max-width: 280px;
+  object-fit: cover;
   border-radius: 6px;
   border: 1px solid #333;
-  margin-top: 1rem;
-  display: block;
+  opacity: 0.95;
+  flex-shrink: 0;
+}
+
+.expedition-block h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.expedition-block p {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.expedition-block ul {
+  margin-top: 0.4rem;
+  padding-left: 1rem;
+  font-size: 0.95rem;
 }
 
 .expedition-block small {
-  display: block;
   font-size: 0.85rem;
   color: #aaa;
   margin-top: 0.4rem;
-  margin-bottom: 0.5rem;
+  display: block;
 }
