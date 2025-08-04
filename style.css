@@ -214,25 +214,37 @@ section h2 {
   }
 }
 .edu-block {
-      background: #111;
-      border-left: 4px solid var(--accent);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      display: flex;
-      align-items: flex-start;
-      gap: 1.5rem;
-    }
-    .edu-block img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-    }
-    .edu-block h3 {
-      margin: 0 0 0.5rem;
-    }
-    .edu-block ul {
-      margin-top: 0.5rem;
-    }
+  background: #111;
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
 
+.edu-block img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-top: 4px;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
 
+.edu-block h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.edu-block p {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.edu-block ul {
+  margin-top: 0.4rem;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+}
