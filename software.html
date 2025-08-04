@@ -1,43 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home | David Heffernan</title>
-  <!-- Insert shared <head> here -->
+  <title>Software | David Heffernan</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
   <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="David Heffernan Portfolio" />
-  <meta property="og:description" content="Astrophysicist, engineer, expeditionary scientist" />
+  <meta property="og:title" content="David Heffernan | Software Projects" />
+  <meta property="og:description" content="Telemetry dashboards, observatory control systems, real-time satellite tools, and Rust experiments." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://via.placeholder.com/120" />
+  <meta property="og:image" content="https://heffernan111.github.io/heffernan111/profile.jpg" />
 </head>
 <body>
-  <div class="sidebar">
-    <div>
-      <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
-      <h1>David Heffernan</h1>
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <div>
+        <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
+        <h1>David Heffernan</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="software.html" class="active">Software</a>
+        <a href="physics.html">Physics</a>
+        <a href="education.html">Education</a>
+        <a href="publications.html">Publications</a>
+        <a href="expeditions.html">Expeditions</a>
+      </nav>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="software.html">Software</a>
-      <a href="physics.html">Physics</a>
-      <a href="education.html">Education</a>
-      <a href="publications.html">Publications</a>
-      <a href="expeditions.html">Expeditions</a>
-    </nav>
-  </div>
 
-  <main>
-    <section>
-     <h2>Software Projects</h2>
-      <ul>
-        <li>🚀 <a href="https://github.com/davidheffernan/telemetry-dashboard">Telemetry Dashboard</a></li>
-        <li>🌐 Observatory control system (Laravel + JS)</li>
-        <li>📡 SDR + Rust ground station tools</li>
-      </ul>
-    </section>
-    <footer>&copy; 2025 David Heffernan</footer>
-  </main>
+    <main>
+      <section>
+        <h2>Software Projects</h2>
+
+        <h3>🚀 Telemetry Dashboard (Rust + Redis + WebSocket)</h3>
+        <p>
+          Real-time data visualization system built in Rust, decoding and rendering satellite or observatory telemetry 
+          from Redis streams. Uses <code>ratatui</code> for terminal UIs and `egui` for future GUI overlay. 
+          Includes power panel rendering, ground-track maps.
+          <br>
+          <a href="https://github.com/davidheffernan/telemetry-dashboard" target="_blank">View on GitHub</a>
+        </p>
+
+        <h3>🌌 Stargate Control Interface (Rust + TUI)</h3>
+        <p>
+          A sci-fi-inspired control interface prototype built with `ratatui`. Allows glyph-based dialing,
+          simulated wormhole activation, and mission logging. Potential future integration with SDR and GPIO 
+          triggers for real-world interaction.
+        </p>
+
+        <h3>📡 SDR & Ground Station Tools</h3>
+        <p>
+          Custom tools for decoding satellite downlinks and beacon packets. Scripts and Rust binaries for interfacing 
+          with RTL-SDR, GNURadio, and visualizing decoded packets live. Includes ISS and cubesat tracking.
+        </p>
+
+        <h3>🔭 Observatory Control System (Laravel + Vue.js)</h3>
+        <p>
+          Web-based control panel for robotic telescopes, built for the Astrophysics Research Institute.
+          Includes hardware state views, environment sensors, queue-based automation, and live WebSocket telemetry.
+          Deployed to observatory systems and tested in La Palma.
+        </p>
+
+        <h3>⛵ Wind CFD Simulator (Rust, WIP)</h3>
+        <p>
+          A Rust-based computational fluid dynamics simulator to study wind across sail foils.
+          Intended to help sailors visualize flow separation, lift, and gust handling. Long-term
+          goal: WASM deployment and use of LBM or simplified Navier-Stokes methods.
+        </p>
+      </section>
+
+      <section>
+        <h2>Other Repositories</h2>
+
+        <h3><a href="https://github.com/heffernan111/Terramus" target="_blank">🌍 Terramus</a></h3>
+        <p>
+          A PHP MVC framework for modular back-end applications. Originally designed as a platform foundation, it demonstrates layered routing, modular controller separation, and basic ORM integration.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/artesseum" target="_blank">🎨 Artesseum</a></h3>
+        <p>
+          A generative art and canvas experiment using JavaScript. Focuses on emergent geometry, particle simulations, and minimalist interaction for browser-based visual projects.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/mean_stack" target="_blank">📦 MEAN Stack</a></h3>
+        <p>
+          Full-stack boilerplate using MongoDB, Express.js, Angular, and Node.js. Built to demonstrate component-based app scaffolding and REST API integration in a client-server setup.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/mern_electron" target="_blank">💻 MERN + Electron</a></h3>
+        <p>
+          A full-stack desktop app using React, Express, MongoDB, and Electron.js. Ideal for cross-platform internal tools where offline-first behavior and desktop packaging are priorities.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/laravel-esendex" target="_blank">📨 Laravel Esendex</a></h3>
+        <p>
+          A wrapper for integrating Esendex SMS delivery into Laravel apps. Provides clean service bindings and fluent message dispatch. Originally forked, extended for custom queue handling.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/PopR" target="_blank">🧪 PopR</a></h3>
+        <p>
+          An academic-style Java toolkit exploring abstract pattern recognition and generative systems. Includes data manipulation, functional pipelines, and early machine learning concepts.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/Hi5" target="_blank">📱 Hi5</a></h3>
+        <p>
+          A legacy Java project focused on mobile device interaction, written during the earlier Android/JavaFX transition era. Includes network tests and cross-device protocols.
+        </p>
+
+        <h3><a href="https://github.com/heffernan111/OceanProject" target="_blank">🌊 OceanProject (Fork)</a></h3>
+        <p>
+          A fork of the famous Unreal Engine 4 Ocean Simulation project. Useful for visualizing complex wave dynamics, procedural water surfaces, and physically-based rendering with C++ shaders.
+        </p>
+      </section>
+
+      <footer>
+        &copy; 2025 David Heffernan
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
