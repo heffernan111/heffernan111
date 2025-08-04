@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>David Heffernan | Explorer, Engineer, Astronomer</title>
+  <title>David Heffernan | Portfolio</title>
   <style>
     :root {
       --bg: #0a0a0a;
@@ -12,105 +12,163 @@
       --font: 'Segoe UI', sans-serif;
     }
 
-    body {
+    * {
       margin: 0;
-      padding: 3rem 1rem;
-      font-family: var(--font);
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
       background: var(--bg);
       color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+    }
+
+    aside {
+      background: #111;
+      width: 240px;
+      padding: 2rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: fixed;
+      height: 100vh;
+      border-right: 1px solid #222;
     }
 
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
+    aside img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid var(--accent);
     }
 
-    header h1 {
-      font-size: 2.8rem;
+    aside h1 {
+      font-size: 1.4rem;
       margin-bottom: 0.5rem;
-      color: var(--accent);
+      text-align: center;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: #bbb;
+    nav {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin-left: 240px;
+      padding: 3rem 2rem;
+      flex: 1;
     }
 
     section {
       max-width: 800px;
-      text-align: center;
-      margin-bottom: 2.5rem;
-      padding: 0 1rem;
+      margin-bottom: 3rem;
     }
 
     h2 {
       color: var(--accent);
       margin-bottom: 1rem;
-      font-size: 1.8rem;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    p, a {
+      font-size: 1rem;
     }
 
     footer {
-      margin-top: 2rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
       color: #666;
     }
 
-    @media (min-width: 600px) {
-      header h1 {
-        font-size: 3.2rem;
+    @media (max-width: 768px) {
+      aside {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
       }
-      section {
-        padding: 0;
+
+      aside h1 {
+        font-size: 1.2rem;
+      }
+
+      nav {
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 2rem 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>David Heffernan</h1>
-    <p>Explorer &nbsp;|&nbsp; Software Engineer &nbsp;|&nbsp; Astrophysicist-in-Training</p>
-  </header>
+  <aside>
+    <div>
+      <img src="https://via.placeholder.com/120" alt="Profile Picture" />
+      <h1>David Heffernan</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="cv.html">CV</a>
+      <a href="dashboard.html">Telemetry</a>
+    </nav>
+  </aside>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I build control systems for telescopes, decode satellite telemetry in Rust, and win sailing races on weekends. 
-      Currently finishing an MSc in Astrophysics and dreaming of space, sea, and science in extreme environments.
-    </p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I build control systems for telescopes, decode satellite telemetry in Rust, and win sailing races on weekends. 
+        Currently finishing an MSc in Astrophysics and dreaming of space, sea, and science in extreme environments.
+      </p>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <p>
-      🚀 <a href="https://github.com/davidheffernan/telemetry-dashboard" target="_blank">Real-Time Telemetry Dashboard</a><br>
-      ⛵ <a href="https://github.com/davidheffernan/sailing-wind-sim" target="_blank">CFD Simulations for Sail Dynamics</a><br>
-      🔭 <a href="https://github.com/davidheffernan/openmct-redis-plugin" target="_blank">OpenMCT Plugin for Redis-based Sensors</a>
-    </p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        🚀 <a href="https://github.com/davidheffernan/telemetry-dashboard" target="_blank">Real-Time Telemetry Dashboard</a><br />
+        ⛵ <a href="https://github.com/davidheffernan/sailing-wind-sim" target="_blank">CFD Simulations for Sail Dynamics</a><br />
+        🔭 <a href="https://github.com/davidheffernan/openmct-redis-plugin" target="_blank">OpenMCT Plugin for Redis-based Sensors</a>
+      </p>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>
-      📫 <a href="mailto:david@example.com">david@example.com</a><br>
-      💼 <a href="https://www.linkedin.com/in/davidheffernan" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-      🧑‍💻 <a href="https://github.com/davidheffernan" target="_blank">GitHub</a>
-    </p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        📫 <a href="mailto:david@example.com">david@example.com</a><br />
+        💼 <a href="https://www.linkedin.com/in/davidheffernan" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+        🧑‍💻 <a href="https://github.com/davidheffernan" target="_blank">GitHub</a>
+      </p>
+    </section>
 
-  <footer>
-    &copy; 2025 David Heffernan. All rights reserved.
-  </footer>
+    <footer>
+      &copy; 2025 David Heffernan. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
