@@ -174,3 +174,44 @@ body::after {
   }
 }
 
+.project {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: #111;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project img {
+  display: block;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding: 1rem;
+  }
+}
+
+
