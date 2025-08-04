@@ -21,6 +21,7 @@ body {
   color: var(--text);
   display: flex;
   flex-direction: column;
+  text-shadow: 0 0 2px #fff2, 0 0 4px #00c2ff33;
 }
 
 .page-wrapper {
