@@ -1,11 +1,117 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Personal Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Heffernan | Explorer, Engineer, Astronomer</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #f0f0f0;
+      --accent: #00c2ff;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    section {
+      max-width: 800px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (min-width: 600px) {
+      header h1 {
+        font-size: 3.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm [Your Name]!</h1>
-  <p>Welcome to my personal site.</p>
+  <header>
+    <h1>David Heffernan</h1>
+    <p>Explorer | Software Engineer | Astrophysicist-in-Training</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I build control systems for telescopes, decode satellite telemetry in Rust, and win sailing races on weekends. 
+      Currently finishing an MSc in Astrophysics and dreaming of space, sea, and science in extreme environments.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <p>
+      🚀 <a href="https://github.com/davidheffernan/telemetry-dashboard" target="_blank">Real-Time Telemetry Dashboard</a><br>
+      ⛵ <a href="https://github.com/davidheffernan/sailing-wind-sim" target="_blank">CFD Simulations for Sail Dynamics</a><br>
+      🔭 <a href="https://github.com/davidheffernan/openmct-redis-plugin" target="_blank">OpenMCT Plugin for Redis-based Sensors</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      📫 <a href="mailto:david@example.com">david@example.com</a><br>
+      💼 <a href="https://www.linkedin.com/in/davidheffernan" target="_blank">LinkedIn</a> &nbsp;|&nbsp; 
+      🧑‍💻 <a href="https://github.com/davidheffernan" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 David Heffernan. All rights reserved.
+  </footer>
 </body>
 </html>
