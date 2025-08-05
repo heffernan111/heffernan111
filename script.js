@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const user = "david.heff.dh";
+  const user = "david.heff.dh+jobs";
   const domain = "googlemail.com";
   const email = `${user}@${domain}`;
   const emailElement = document.getElementById("email");
