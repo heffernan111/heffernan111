@@ -355,3 +355,40 @@ section h2 {
     opacity: 0;
   }
 }
+.exp-block {
+  background: #111;
+  border-left: 4px solid var(--accent, #00bcd4);
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  display: block; /* Ensure vertical layout */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.exp-block h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--accent, #00bcd4);
+}
+
+.exp-block p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.exp-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #eee;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.exp-block ul li::marker {
+  color: var(--accent, #00bcd4);
+}
+
