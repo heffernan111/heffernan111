@@ -1,11 +1,20 @@
 // Highlight active nav item
 document.addEventListener("DOMContentLoaded", () => {
+  
   const current = window.location.pathname.split("/").pop();
   document.querySelectorAll("nav a").forEach((link) => {
     if (link.getAttribute("href") === current) {
       link.classList.add("active");
     }
   });
+
+  const user = "david.heff.dh";
+  const domain = "googlemail.com";
+  const email = `${user}@${domain}`;
+  const emailElement = document.getElementById("email");
+
+  emailElement.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+  
 });
 
 function spawnComet() {
