@@ -1,84 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Software | David Heffernan</title>
+  <title>Professional | David Heffernan</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
   <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="David Heffernan | Software Projects" />
-  <meta property="og:description" content="Telemetry dashboards, observatory control systems, real-time satellite tools, and Rust experiments." />
+  <meta property="og:title" content="David Heffernan | Professional Experience" />
+  <meta property="og:description"
+    content="10+ years bridging software engineering, observatory control systems, and field research." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://heffernan111.github.io/heffernan111/profile.jpg" />
 </head>
+
 <body>
+  <canvas id="starfield"></canvas>
+
   <div class="page-wrapper">
+
     <div class="sidebar">
-      <div>
-        <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
+      <div class="sidebar-profile">
+        <div class="avatar-ring">
+          <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="David Heffernan" />
+        </div>
         <h1>David Heffernan</h1>
+        <p class="sidebar-tagline">Software Architect<br>Astrophysicist · Analogue Astronaut</p>
       </div>
+      <div class="sidebar-divider"></div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="software.html">Software</a>
-        <a href="education.html">Education</a>
-        <a href="publications.html">Publications</a>
-        <a href="expeditions.html">Expeditions</a>
-        <a href="professional.html" class="active">Professional</a>
+        <a href="index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a href="software.html"><span class="nav-icon">⟨/⟩</span> Software</a>
+        <a href="education.html"><span class="nav-icon">◎</span> Education</a>
+        <a href="publications.html"><span class="nav-icon">✦</span> Publications</a>
+        <a href="expeditions.html"><span class="nav-icon">⛰</span> Expeditions</a>
+        <a href="professional.html" class="active"><span class="nav-icon">◈</span> Professional</a>
       </nav>
+      <div class="sidebar-footer">
+        <a href="https://github.com/heffernan111" target="_blank" title="GitHub">⌥</a>
+        <a href="https://gitlab.com/dh.heffernan" target="_blank" title="GitLab">◆</a>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" title="Email">✉</a>
+      </div>
     </div>
 
     <main>
-      <section>
-        <h2>Professional Experience</h2>
-        
-        <div class="exp-block">
-          <h3>🧠 Software Architect & Engineering Leader</h3>
-          <p>
-            Over a decade of hands-on experience designing, building, and scaling cloud-native systems across web, mobile, and observatory platforms. Comfortable leading technical teams or diving deep into codebases. 
-          </p>
-          <ul>
-            <li>Architected real-time control systems for scientific instrumentation using Go, Laravel, and WebSockets.</li>
-            <li>Built serverless pipelines (AWS Lambda + S3 + Python) for automated data reduction in remote observatories.</li>
-            <li>Modernized legacy PHP5 apps into modular Laravel+Vue platforms. Optimized SQL for 400% performance gain.</li>
-            <li>Implemented CI/CD pipelines (GitHub Actions, Bitbucket Pipelines) and introduced structured SDLC practices.</li>
-            <li>Created mobile-first Android apps using Kotlin and Bluetooth for athlete telemetry and fitness testing.</li>
-            <li>Built internal platforms with Go and React, and integrated Redis, RabbitMQ, PostgreSQL, and Firebase.</li>
-          </ul>
-        </div>
-        
-        <div class="exp-block">
-          <h3>🔧 Systems Engineering & DevOps</h3>
-          <p>
-            Strong background in infrastructure and tooling, with a focus on reliability, performance, and developer productivity.
-          </p>
-          <ul>
-            <li>Led migrations to AWS and GCP, replacing on-prem systems with cloud-native microservices.</li>
-            <li>Refactored Python data tools using SQLAlchemy and Docker to improve maintainability and testing.</li>
-            <li>Introduced observability tooling (Grafana, Prometheus) for internal dashboards and external reporting.</li>
-            <li>Built Electron.js interfaces for hardware control over USB/TCP, integrating with embedded devices.</li>
-            <li>Used AWS Comprehend and Textract to add NLP and document scanning to internal workflows.</li>
-          </ul>
-        </div>
-        
-        <div class="exp-block">
-          <h3>🚀 Applied Research & Field Software</h3>
-          <p>
-            Applied technical skills in challenging research environments, from analogue astronaut missions to remote telescope deployments.
-          </p>
-          <ul>
-            <li>Developed field-tested mission control software with Redis and WebSocket feeds for remote operations.</li>
-            <li>Created time-delay chat systems for analogue astronaut teams operating in communication blackout scenarios.</li>
-            <li>Led remote debugging and deployment on robotic telescopes in La Palma and other field locations.</li>
-            <li>Published multiple SPIE and AAS papers on observatory software, DevOps, and real-time control systems.</li>
-          </ul>
-        </div>
-        </section>
+      <div class="page-header reveal">
+        <h2><span class="accent">◈</span> Professional Experience</h2>
+        <p>10+ years bridging software engineering, observatory control systems, and field research.</p>
+      </div>
 
-      <footer>
-        &copy; 2025 David Heffernan
-      </footer>
+      <p class="section-heading reveal">Experience</p>
+
+      <!-- Architecture & Leadership -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="exp-card-header">
+          <h3 class="exp-card-title">Senior Software Architect & Engineer</h3>
+        </div>
+        <p>
+          Extensive background in designing, building, and scaling resilient systems. Highly capable of leading
+          technical teams or delivering complex projects independently.
+        </p>
+        <ul style="margin-top:0.75rem;">
+          <li>Architected real-time control systems for academic scientific instrumentation.</li>
+          <li>Built serverless data reduction pipelines for remote observatories using AWS Lambda, S3, and Python.</li>
+          <li>Modernized legacy platforms into highly optimized cloud-native microservices.</li>
+          <li>Implemented structured CI/CD pipelines and agile delivery processes for research groups.</li>
+        </ul>
+      </div>
+
+      <!-- Systems & DevOps -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="exp-card-header">
+          <h3 class="exp-card-title">Systems Engineering & Observability</h3>
+        </div>
+        <p>
+          Deep expertise in infrastructure, networking, and ensuring high reliability for critical systems operating
+          under constraints.
+        </p>
+        <ul style="margin-top:0.75rem;">
+          <li>Migrated on-premise infrastructure to cloud-nativeAWS and GCP environments.</li>
+          <li>Developed observability tools using Grafana and Prometheus for continuous telemetry monitoring.</li>
+          <li>Built hardware control interfaces over TCP/USB communicating natively with embedded devices.</li>
+        </ul>
+      </div>
+
+      <!-- Applied Research -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="exp-card-header">
+          <h3 class="exp-card-title">Applied Research & Field Operations</h3>
+        </div>
+        <p>
+          Applying software engineering rigor to challenging research environments, supporting science operations from
+          analogue missions to robotic telescope design.
+        </p>
+        <ul style="margin-top:0.75rem;">
+          <li>Developed field-tested mission control software using Redis and WebSockets for remote operations.</li>
+          <li>Led remote deployment and debugging on robotic telescopes based in La Palma.</li>
+          <li>Published technical research in SPIE on observatory software, DevOps, and real-time control networks.</li>
+        </ul>
+      </div>
+
+      <footer>© 2025 David Heffernan</footer>
     </main>
   </div>
 </body>
+
 </html>

@@ -1,77 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Home | David Heffernan</title>
-  <!-- Insert shared <head> here -->
+  <title>Education | David Heffernan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic background of David Heffernan - MSc Astrophysics, BSc Natural Sciences." />
+  <meta property="og:title" content="David Heffernan | Education" />
+  <meta property="og:description" content="MSc Astrophysics · BSc Natural Sciences · PGCert Space Science" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://heffernan111.github.io/heffernan111/profile.jpg" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="David Heffernan Portfolio" />
-  <meta property="og:description" content="Astrophysicist, engineer, expeditionary scientist" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://via.placeholder.com/120" />
 </head>
+
 <body>
-  <div class="comet-container"></div>
-  <div class="sidebar">
-    <div>
-      <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
-      <h1>David Heffernan</h1>
+  <canvas id="starfield"></canvas>
+
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <div class="sidebar-profile">
+        <div class="avatar-ring">
+          <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="David Heffernan" />
+        </div>
+        <h1>David Heffernan</h1>
+        <p class="sidebar-tagline">Software Architect<br>Astrophysicist · Analogue Astronaut</p>
+      </div>
+      <div class="sidebar-divider"></div>
+      <nav>
+        <a href="index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a href="software.html"><span class="nav-icon">⟨/⟩</span> Software</a>
+        <a href="education.html" class="active"><span class="nav-icon">◎</span> Education</a>
+        <a href="publications.html"><span class="nav-icon">✦</span> Publications</a>
+        <a href="expeditions.html"><span class="nav-icon">⛰</span> Expeditions</a>
+        <a href="professional.html"><span class="nav-icon">◈</span> Professional</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="https://github.com/heffernan111" target="_blank" title="GitHub">⌥</a>
+        <a href="https://gitlab.com/dh.heffernan" target="_blank" title="GitLab">◆</a>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" title="Email">✉</a>
+      </div>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="software.html">Software</a>
-      <a href="education.html">Education</a>
-      <a href="publications.html">Publications</a>
-      <a href="expeditions.html">Expeditions</a>
-      <a href="professional.html">Professional</a>
-    </nav>
+
+    <main>
+      <div class="page-header reveal">
+        <h2><span class="accent">◎</span> Education</h2>
+        <p>Academic background spanning natural sciences, astrophysics, and space science</p>
+      </div>
+
+      <!-- MSc -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="edu-card">
+          <div class="edu-card-logo">
+            <img src="assets/ljmu.png" alt="LJMU logo" />
+          </div>
+          <div class="edu-card-body">
+            <h3>MSc Astrophysics <span
+                style="font-size:0.78rem; font-weight:400; color:var(--accent); font-family:var(--font-mono);">(in
+                progress)</span></h3>
+            <p class="institution">Liverpool John Moores University</p>
+            <ul class="grade-list">
+              <li class="grade-item"><strong>Numerical Methods</strong> &nbsp;82%</li>
+              <li class="grade-item"><strong>Astronomical Techniques</strong> &nbsp;71%</li>
+              <li class="grade-item"><strong>Cosmology</strong> &nbsp;71%</li>
+              <li class="grade-item"><strong>Astrophysical Concepts</strong> &nbsp;60%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PGCert -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="edu-card">
+          <div class="edu-card-logo">
+            <img src="assets/ou_logo.png" alt="Open University logo" />
+          </div>
+          <div class="edu-card-body">
+            <h3>PGCert Space Science <span
+                style="font-size:0.78rem; font-weight:400; color:var(--text-muted);">2023</span></h3>
+            <p class="institution">The Open University</p>
+            <div class="project-stack" style="margin-top: 0.5rem;">
+              <span class="pill gold">Merit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BSc -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="edu-card">
+          <div class="edu-card-logo">
+            <img src="assets/ou_logo.png" alt="Open University logo" />
+          </div>
+          <div class="edu-card-body">
+            <h3>BSc Natural Sciences <span
+                style="font-size:0.78rem; font-weight:400; color:var(--text-muted);">2021</span></h3>
+            <p class="institution">The Open University</p>
+            <div class="project-stack" style="margin-top: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="pill gold">2:1 Honours</span>
+            </div>
+            <ul class="grade-list">
+              <li class="grade-item"><strong>Dissertation</strong> &nbsp;84%</li>
+              <li class="grade-item"><strong>Astrophysics</strong> &nbsp;75%</li>
+              <li class="grade-item"><strong>The Relativistic Universe</strong> &nbsp;73%</li>
+              <li class="grade-item"><strong>Quantum Physics</strong> &nbsp;71%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer>© 2025 David Heffernan</footer>
+    </main>
   </div>
-
-  <main>
-    <section>
-      <h2>Education</h2>
-
-      <div class="edu-block">
-         <img src="assets/ljmu.png" alt="LJMU logo">
-        <div>
-          <h3>MSc Astrophysics (in progress)</h3>
-          <p><strong>Liverpool John Moores University</strong></p>
-          <ul>
-            <li><strong>Astrophysical Concepts:</strong> 60%</li>
-            <li><strong>Cosmology:</strong> 71%</li>
-            <li><strong>Astronomical Techniques:</strong> 71%</li>
-            <li><strong>Numerical Methods:</strong> 82%</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="edu-block">
-        <img src="assets/ou_logo.png" alt="OU logo" />
-        <div>
-          <h3>Postgraduate Certificate – Space Science (2023)</h3>
-          <p><strong>Open University – Merit</strong></p>
-        </div>
-      </div>
-
-      <div class="edu-block">
-        <img src="assets/ou_logo.png" alt="OU logo" />
-        <div>
-          <h3>BSc Natural Sciences (2021)</h3>
-          <p><strong>Open University – 2:1 Honours</strong></p>
-          <ul>
-            <li><strong>Dissertation:</strong> 84%</li>
-            <li><strong>Astrophysics:</strong> 75%</li>
-            <li><strong>The Relativistic Universe:</strong> 73%</li>
-            <li><strong>Quantum Physics:</strong> 71%</li>
-          </ul>
-        </div>
-      </div>
-
-    </section>
-
-    <footer>&copy; 2025 David Heffernan</footer>
-  </main>
 </body>
+
 </html>

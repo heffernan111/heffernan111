@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Publications | David Heffernan</title>
   <link rel="stylesheet" href="style.css" />
@@ -11,53 +12,73 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://via.placeholder.com/120" />
 </head>
+
 <body>
-  <div class="sidebar">
-    <div>
-      <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
-      <h1>David Heffernan</h1>
+  <canvas id="starfield"></canvas>
+
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <div class="sidebar-profile">
+        <div class="avatar-ring">
+          <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="David Heffernan" />
+        </div>
+        <h1>David Heffernan</h1>
+        <p class="sidebar-tagline">Software Architect<br>Astrophysicist · Analogue Astronaut</p>
+      </div>
+      <div class="sidebar-divider"></div>
+      <nav>
+        <a href="index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a href="software.html"><span class="nav-icon">⟨/⟩</span> Software</a>
+        <a href="education.html"><span class="nav-icon">◎</span> Education</a>
+        <a href="publications.html" class="active"><span class="nav-icon">✦</span> Publications</a>
+        <a href="expeditions.html"><span class="nav-icon">⛰</span> Expeditions</a>
+        <a href="professional.html"><span class="nav-icon">◈</span> Professional</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="https://github.com/heffernan111" target="_blank" title="GitHub">⌥</a>
+        <a href="https://gitlab.com/dh.heffernan" target="_blank" title="GitLab">◆</a>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" title="Email">✉</a>
+      </div>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="software.html">Software</a>
-      <a href="education.html">Education</a>
-      <a href="publications.html" class="active">Publications</a>
-      <a href="expeditions.html">Expeditions</a>
-      <a href="professional.html">Professional</a>
-    </nav>
+
+    <main>
+      <section>
+        <h2>Selected Publications</h2>
+
+        <div class="pub-block">
+          <h3>From summit to screen: harnessing modern cloud technologies to construct an integrated observatory</h3>
+          <p><em>Heffernan, D., Bento, J., Copley, D., Jermak, H., Copperwheat, C., Steele, I.</em></p>
+          <p><a href="https://doi.org/10.1117/12.3019001" target="_blank">SPIE Vol. 13098 (2024), DOI:
+              10.1117/12.3019001</a></p>
+        </div>
+
+        <div class="pub-block">
+          <h3>A unit testing approach to developing an industrial real-time distributed control system for the New
+            Robotic Telescope</h3>
+          <p><em>Garner, A., Bento, J., Copley, D., Heffernan, D., Moissec, C.</em></p>
+          <p><a href="https://doi.org/10.1117/12.3019827" target="_blank">SPIE Vol. 13101 (2024), DOI:
+              10.1117/12.3019827</a></p>
+        </div>
+
+        <div class="pub-block">
+          <h3>A modern DevOps and serverless architecture for the New Robotic Telescope software infrastructure</h3>
+          <p><em>Bento, J., Heffernan, D., Quintana, C., Prieto, A., Garner, A., Copley, D., et al.</em></p>
+          <p><a href="https://doi.org/10.1117/12.3018820" target="_blank">SPIE Vol. 13101 (2024), DOI:
+              10.1117/12.3018820</a></p>
+        </div>
+
+        <div class="pub-block">
+          <h3>New Robotic Telescope system progress towards critical design review</h3>
+          <p><em>Copley, D., Ashley, R., Bates, S., Bento, J., Heffernan, D., et al.</em></p>
+          <p><a href="https://doi.org/10.1117/12.3018999" target="_blank">SPIE Vol. 13094 (2024), DOI:
+              10.1117/12.3018999</a></p>
+        </div>
+
+      </section>
+
+      <footer>&copy; 2025 David Heffernan</footer>
+    </main>
   </div>
-
-  <main>
-    <section>
-      <h2>Selected Publications</h2>
-
-      <div class="pub-block">
-        <h3>From summit to screen: harnessing modern cloud technologies to construct an integrated observatory</h3>
-        <p><em>Heffernan, D., Bento, J., Copley, D., Jermak, H., Copperwheat, C., Steele, I.</em></p>
-        <p><a href="https://doi.org/10.1117/12.3019001" target="_blank">SPIE Vol. 13098 (2024), DOI: 10.1117/12.3019001</a></p>
-      </div>
-
-      <div class="pub-block">
-        <h3>A unit testing approach to developing an industrial real-time distributed control system for the New Robotic Telescope</h3>
-        <p><em>Garner, A., Bento, J., Copley, D., Heffernan, D., Moissec, C.</em></p>
-        <p><a href="https://doi.org/10.1117/12.3019827" target="_blank">SPIE Vol. 13101 (2024), DOI: 10.1117/12.3019827</a></p>
-      </div>
-
-      <div class="pub-block">
-        <h3>A modern DevOps and serverless architecture for the New Robotic Telescope software infrastructure</h3>
-        <p><em>Bento, J., Heffernan, D., Quintana, C., Prieto, A., Garner, A., Copley, D., et al.</em></p>
-        <p><a href="https://doi.org/10.1117/12.3018820" target="_blank">SPIE Vol. 13101 (2024), DOI: 10.1117/12.3018820</a></p>
-      </div>
-
-      <div class="pub-block">
-        <h3>New Robotic Telescope system progress towards critical design review</h3>
-        <p><em>Copley, D., Ashley, R., Bates, S., Bento, J., Heffernan, D., et al.</em></p>
-        <p><a href="https://doi.org/10.1117/12.3018999" target="_blank">SPIE Vol. 13094 (2024), DOI: 10.1117/12.3018999</a></p>
-      </div>
-
-    </section>
-
-    <footer>&copy; 2025 David Heffernan</footer>
-  </main>
 </body>
+
 </html>

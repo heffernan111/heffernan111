@@ -1,94 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Home | David Heffernan</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="David Heffernan Portfolio" />
-  <meta property="og:description" content="Astrophysicist, engineer, expeditionary scientist" />
+  <meta name="description" content="David Heffernan - Software Architect, Astrophysicist & Analogue Astronaut." />
+  <meta property="og:title" content="David Heffernan" />
+  <meta property="og:description" content="Software Architect · Astrophysicist · Analogue Astronaut" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://heffernan111.github.io/heffernan111/profile.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
+
 <body>
+  <canvas id="starfield"></canvas>
+
   <div class="page-wrapper">
+    <!-- Sidebar -->
     <div class="sidebar">
-      <div>
-        <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
+      <div class="sidebar-profile">
+        <div class="avatar-ring">
+          <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="David Heffernan" />
+        </div>
         <h1>David Heffernan</h1>
+        <p class="sidebar-tagline">Software Architect<br>Astrophysicist · Analogue Astronaut</p>
       </div>
+
+      <div class="sidebar-divider"></div>
+
       <nav>
-        <a href="index.html">Home</a>
-        <a href="software.html">Software</a>
-        <a href="education.html">Education</a>
-        <a href="publications.html">Publications</a>
-        <a href="expeditions.html">Expeditions</a>
-        <a href="professional.html">Professional</a>
+        <a href="index.html" class="active">
+          <span class="nav-icon">⌂</span> Home
+        </a>
+        <a href="software.html">
+          <span class="nav-icon">⟨/⟩</span> Software
+        </a>
+        <a href="education.html">
+          <span class="nav-icon">◎</span> Education
+        </a>
+        <a href="publications.html">
+          <span class="nav-icon">✦</span> Publications
+        </a>
+        <a href="expeditions.html">
+          <span class="nav-icon">⛰</span> Expeditions
+        </a>
+        <a href="professional.html">
+          <span class="nav-icon">◈</span> Professional
+        </a>
       </nav>
+
+      <div class="sidebar-footer">
+        <a href="https://github.com/heffernan111" target="_blank" title="GitHub">⌥</a>
+        <a href="https://gitlab.com/dh.heffernan" target="_blank" title="GitLab">◆</a>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" title="Email">✉</a>
+      </div>
     </div>
 
+    <!-- Main -->
     <main>
-      <section>
-        <div class="project">
-        <h2>About</h2>
-        <p>
-          I'm a software engineer, field scientist, and postgraduate astrophysicist with a passion for real-time systems,
-          off-grid autonomy, and expedition-based science. I’ve spent the last 12 years building distributed platforms
-          across industry and academia; from Laravel-based control interfaces for robotic telescopes to Rust-based
-          telemetry dashboards decoding satellite signals in real time.
+      <!-- Hero -->
+      <div class="hero reveal">
+        <div class="hero-eyebrow">Available for PhD &amp; Collaboration</div>
+        <h2>Astrophysics. <br> Autonomous systems. <br> Extreme environment.</h2>
+        <p class="hero-desc">
+          Software architect and postgraduate astrophysicist with 10+ years of experience building
+          real-time distributed platforms - from robotic telescope control systems to satellite telemetry
+          dashboards to analogue astronaut mission control.
         </p>
-        <p>
-          My professional path bridges observatory software, mission control systems, and DevOps engineering. But I’m just
-          as comfortable in a kayak or remote field station as I am behind a terminal. My recent analogue astronaut
-          expeditions have strengthened my belief that the future of science and exploration lies at the intersection of
-          extreme environments, autonomy, and human adaptability.
-        </p>
-        <p>
-          I also work with embedded Python in scientific systems; building lightweight automation pipelines, data 
-          reduction tools, and interactive telemetry interfaces in harsh environments. This includes scripting onboard 
-          telescope controls and remote sensing systems under hardware and bandwidth constraints.
-        </p>
+        <div class="hero-pills">
+          <span class="pill">PHP</span>
+          <span class="pill">Go</span>
+          <span class="pill">Python</span>
+          <span class="pill">WebSockets</span>
+          <span class="pill gold">MSc Astrophysics</span>
+          <span class="pill purple">Analogue Astronaut</span>
         </div>
-      </section>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" class="btn btn-primary">Get in touch ↗</a>
+      </div>
 
-      <section>
-        <div class="project">
-        <h2>Aspirations</h2>
-        <p>
-          I’m aiming toward a PhD in either solar physics, expeditionary sensing, or large-scale cosmological structure;
-          ideally projects that combine data, software, and field deployment. Long-term, I hope to contribute to analogue
-          mission training, Earth-space systems engineering, and one day, astronaut selection itself.
-        </p>
-        <p>
-          I'm particularly interested in the Hubble tension; the discrepancy between local and early-universe expansion
-          rate measurements. My recent MSc work explores alternative redshift-distance relations and the possibility of
-          wavelength-dependent propagation effects as a solution, bridging theory with observational astrophysics.
-        </p>
-        <p>
-          My technical focus is on building resilient, observable systems for science in motion; be it an ocean-borne
-          environmental platform, a satellite-ground telemetry bridge, or a remote-control stack for an isolated telescope.
-        </p>
-        <p>
-          If you're working in expedition science, wind dynamics, cosmology, or astronomical instrumentation, I’d love
-          to connect.
-        </p>
+      <!-- Stats -->
+      <div class="stat-row reveal">
+        <div class="stat">
+          <div class="stat-value">10<span>+</span></div>
+          <div class="stat-label">Years industry exp.</div>
         </div>
-      </section>
-
-        <div class="project">
-          <h2>Contact</h2>
-          <p>
-            You can reach me at:
-            <span id="email" style="font-family: monospace;"></span>
-          </p>
+        <div class="stat">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Publications</div>
         </div>
-      </section>
+        <div class="stat">
+          <div class="stat-value">2</div>
+          <div class="stat-label">Analogue missions</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">100<span>km</span></div>
+          <div class="stat-label">Charity expedition</div>
+        </div>
+      </div>
 
-      <footer>
-        &copy; 2025 David Heffernan
-      </footer>
+      <!-- About -->
+      <p class="section-heading reveal">About</p>
+
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <p>
+          My professional path bridges observatory software, mission control systems, and DevOps engineering.
+          I've built distributed platforms across industry and academia - from Laravel-based control interfaces
+          for robotic telescopes to Rust-based telemetry dashboards decoding satellite signals in real time.
+        </p>
+        <p>
+          But I'm just as comfortable in a kayak or remote field station as I am behind a terminal. My analogue
+          astronaut expeditions have strengthened my belief that the future of science and exploration lies at
+          the intersection of extreme environments, autonomy, and human adaptability.
+        </p>
+        <p>
+          I also work with embedded Python in scientific systems - building lightweight automation pipelines,
+          data reduction tools, and interactive telemetry interfaces under hardware and bandwidth constraints.
+        </p>
+      </div>
+
+      <!-- Aspirations -->
+      <p class="section-heading reveal">Aspirations</p>
+
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <p>
+          I am aiming for a PhD in cosmology or space engineering, with a focus on projects that integrate observational
+          data, instrumentation, and software for large-scale scientific investigations.
+        </p>
+        <p>
+          I'm particularly interested in the
+          <strong style="color:#fff">Hubble tension</strong>: the discrepancy between local and early-universe
+          expansion rate measurements. My recent MSc work explores alternative redshift-distance relations and
+          wavelength-dependent propagation effects.
+        </p>
+        <p>
+          My technical focus is on building resilient, observable systems for science in motion - whether an
+          ocean-borne environmental platform, a satellite-ground telemetry bridge, or a remote-control stack
+          for an isolated telescope.
+        </p>
+        <p style="margin-top: 0.75rem; font-style: italic; color: #4e6080;">
+          If you're working in expedition science, wind dynamics, cosmology, or astronomical instrumentation -
+          I'd love to connect.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <p class="section-heading reveal">Contact</p>
+
+      <div class="card contact-card reveal">
+        <div class="card-accent-bar"></div>
+        <p style="color:#7a8299; margin-bottom: 0.5rem;">Reach me directly at</p>
+        <div class="contact-email">
+          <span id="email"></span>
+        </div>
+      </div>
+
+      <footer>© 2025 David Heffernan</footer>
     </main>
   </div>
 </body>
+
 </html>

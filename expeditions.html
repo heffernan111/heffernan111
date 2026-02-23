@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Expeditions | David Heffernan</title>
   <link rel="stylesheet" href="style.css" />
@@ -7,77 +8,108 @@
   <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="David Heffernan | Expeditions" />
-  <meta property="og:description" content="Analogue astronaut and expedition leader. Mission Commander of Meili-2 and kayaking leader for the Stroke Association." />
+  <meta property="og:description"
+    content="Analogue astronaut and expedition leader. Mission Commander of Meili-2 and kayaking leader for the Stroke Association." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://via.placeholder.com/120" />
 </head>
+
 <body>
-  <div class="sidebar">
-    <div>
-      <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
-      <h1>David Heffernan</h1>
+  <canvas id="starfield"></canvas>
+
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <div class="sidebar-profile">
+        <div class="avatar-ring">
+          <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="David Heffernan" />
+        </div>
+        <h1>David Heffernan</h1>
+        <p class="sidebar-tagline">Software Architect<br>Astrophysicist · Analogue Astronaut</p>
+      </div>
+      <div class="sidebar-divider"></div>
+      <nav>
+        <a href="index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a href="software.html"><span class="nav-icon">⟨/⟩</span> Software</a>
+        <a href="education.html"><span class="nav-icon">◎</span> Education</a>
+        <a href="publications.html"><span class="nav-icon">✦</span> Publications</a>
+        <a href="expeditions.html" class="active"><span class="nav-icon">⛰</span> Expeditions</a>
+        <a href="professional.html"><span class="nav-icon">◈</span> Professional</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="https://github.com/heffernan111" target="_blank" title="GitHub">⌥</a>
+        <a href="https://gitlab.com/dh.heffernan" target="_blank" title="GitLab">◆</a>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" title="Email">✉</a>
+      </div>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="software.html">Software</a>
-      <a href="education.html">Education</a>
-      <a href="publications.html">Publications</a>
-      <a href="expeditions.html" class="active">Expeditions</a>
-      <a href="professional.html">Professional</a>
-    </nav>
+
+    <main>
+      <section>
+        <div class="page-header reveal">
+          <h2><span class="accent">◈</span> Expeditions</h2>
+          <p>Analogue missions, leadership, and field operations.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-accent-bar"></div>
+          <div class="expedition-card">
+            <img src="assets/meili2_2.jpg" alt="Meili-2 Expedition">
+            <div>
+              <h3>🧭 Meili-2 Analogue Mission (2024)</h3>
+              <p class="expedition-role">Mission Commander, Space Health Research UK</p>
+              <p>Appointed as Mission Commander following a leadership transition. Leading team cohesion and operational
+                readiness for a remote analogue space mission on a Scottish island.</p>
+              <ul>
+                <li>Developed mission objectives and science plans prioritizing safety and crew well-being.</li>
+                <li>Led pre-mission training, including field drills and communications prep.</li>
+                <li>Built crew morale under time-limited preparation conditions.</li>
+              </ul>
+              <small>📸 Photo by David Heffernan</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-accent-bar"></div>
+          <div class="expedition-card">
+            <img src="assets/meili1_1.JPG" alt="Meili-1 Fieldwork">
+            <div>
+              <h3>🛰️ Meili-1 Analogue Mission (2023)</h3>
+              <p class="expedition-role">Mission Control Specialist & Reserve Deputy Commander</p>
+              <p>Selected as one of the first 10 analogue astronauts in the UK. Mission control team for a two-week
+                simulated space mission in Scotland.</p>
+              <ul>
+                <li>Served as Communications Officer, managing field-MC coordination.</li>
+                <li>Trained in field geology, orienteering, and high-risk environment survival.</li>
+                <li>Supported UV, tick, and terrain safety protocols.</li>
+              </ul>
+              <small>📸 Photo by Mike Murphy</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-accent-bar"></div>
+          <div class="expedition-card">
+            <img src="assets/kayak_1.jpg" alt="Kayaking Expedition">
+            <div>
+              <h3>🚣‍♂️ 100km Kayaking Expedition (2024)</h3>
+              <p class="expedition-role">Expedition Leader, Stroke Association Fundraiser</p>
+              <p>Led a 100km charity kayaking trip supporting a stroke survivor, planning all logistics and safety
+                protocols.</p>
+              <ul>
+                <li>Planned route, training weekends, and support vehicle coordination.</li>
+                <li>Adapted trip scope to account for rehabilitation needs.</li>
+                <li>Ensured water safety, practicing capsize and recovery techniques in advance.</li>
+              </ul>
+              <small>📸 Photo by Marcus Clarke</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>&copy; 2025 David Heffernan</footer>
+    </main>
   </div>
-
-  <main>
-    <section>
-      <h2>Expeditions</h2>
-
-      <div class="expedition-block">
-        <img src="assets/meili2_2.jpg" alt="Meili-2 Expedition">
-        <div>
-          <h3>🧭 Meili-2 Analogue Mission (2024)</h3>
-          <p><strong>Role:</strong> Mission Commander, Space Health Research UK</p>
-          <p>Appointed as Mission Commander following a leadership transition. Leading team cohesion and operational readiness for a remote analogue space mission on a Scottish island.</p>
-          <ul>
-            <li>Developed mission objectives and science plans prioritizing safety and crew well-being.</li>
-            <li>Led pre-mission training, including field drills and communications prep.</li>
-            <li>Built crew morale under time-limited preparation conditions.</li>
-          </ul>
-          <small>📸 Photo by David Heffernan</small>
-        </div>
-      </div>
-
-      <div class="expedition-block">
-        <img src="assets/meili1_1.JPG" alt="Meili-1 Fieldwork">
-        <div>
-          <h3>🛰️ Meili-1 Analogue Mission (2023)</h3>
-          <p><strong>Role:</strong> Mission Control Specialist & Reserve Deputy Commander</p>
-          <p>Selected as one of the first 10 analogue astronauts in the UK. Mission control team for a two-week simulated space mission in Scotland.</p>
-          <ul>
-            <li>Served as Communications Officer, managing field-MC coordination.</li>
-            <li>Trained in field geology, orienteering, and high-risk environment survival.</li>
-            <li>Supported UV, tick, and terrain safety protocols.</li>
-          </ul>
-          <small>📸 Photo by Mike Murphy</small>
-        </div>
-      </div>
-
-      <div class="expedition-block">
-        <img src="assets/kayak_1.jpg" alt="Kayaking Expedition">
-        <div>
-          <h3>🚣‍♂️ 100km Kayaking Expedition (2024)</h3>
-          <p><strong>Role:</strong> Expedition Leader, Stroke Association Fundraiser</p>
-          <p>Led a 100km charity kayaking trip supporting a stroke survivor, planning all logistics and safety protocols.</p>
-          <ul>
-            <li>Planned route, training weekends, and support vehicle coordination.</li>
-            <li>Adapted trip scope to account for rehabilitation needs.</li>
-            <li>Ensured water safety, practicing capsize and recovery techniques in advance.</li>
-          </ul>
-          <small>📸 Photo by Marcus Clarke</small>
-        </div>
-      </div>
-    </section>
-
-    <footer>&copy; 2025 David Heffernan</footer>
-  </main>
 </body>
+
 </html>

@@ -1,110 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Software | David Heffernan</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="David Heffernan | Software Projects" />
-  <meta property="og:description" content="Telemetry dashboards, observatory control systems, real-time satellite tools, and Rust experiments." />
+  <meta name="description"
+    content="Software projects by David Heffernan - telemetry dashboards, observatory control systems, mission control software." />
+  <meta property="og:title" content="David Heffernan | Software" />
+  <meta property="og:description"
+    content="Telemetry dashboards, observatory control systems, real-time satellite tools and Rust experiments." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://heffernan111.github.io/heffernan111/profile.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
+
 <body>
+  <canvas id="starfield"></canvas>
+
   <div class="page-wrapper">
     <div class="sidebar">
-      <div>
-        <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="Profile" />
+      <div class="sidebar-profile">
+        <div class="avatar-ring">
+          <img src="https://heffernan111.github.io/heffernan111/profile.jpg" alt="David Heffernan" />
+        </div>
         <h1>David Heffernan</h1>
+        <p class="sidebar-tagline">Software Architect<br>Astrophysicist · Analogue Astronaut</p>
       </div>
+      <div class="sidebar-divider"></div>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="software.html" class="active">Software</a>
-        <a href="education.html">Education</a>
-        <a href="publications.html">Publications</a>
-        <a href="expeditions.html">Expeditions</a>
-        <a href="professional.html">Professional</a>
+        <a href="index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a href="software.html" class="active"><span class="nav-icon">⟨/⟩</span> Software</a>
+        <a href="education.html"><span class="nav-icon">◎</span> Education</a>
+        <a href="publications.html"><span class="nav-icon">✦</span> Publications</a>
+        <a href="expeditions.html"><span class="nav-icon">⛰</span> Expeditions</a>
+        <a href="professional.html"><span class="nav-icon">◈</span> Professional</a>
       </nav>
+      <div class="sidebar-footer">
+        <a href="https://github.com/heffernan111" target="_blank" title="GitHub">⌥</a>
+        <a href="https://gitlab.com/dh.heffernan" target="_blank" title="GitLab">◆</a>
+        <a href="mailto:david.heff.dh+jobs@googlemail.com" title="Email">✉</a>
+      </div>
     </div>
 
     <main>
-      <section>
-        <h2>Software Projects</h2>
-      
-        <div class="project">
-          <h3>🚀 Telemetry Dashboard (Rust + Redis + WebSocket)</h3>
-          <p>
-            A real-time dashboard supporting PUS data formats, 3D attitude visualization, and integration with Redis and RabbitMQ for live satellite data streaming and visualization.
-          </p>
-          <img src="assets/telemetry.png" alt="Telemetry Dashboard demo">
-          <!-- <p>
-            <a href="https://github.com/heffernan111/rust-telemetry" target="_blank">View on GitHub</a>
-          </p> -->
+      <div class="page-header reveal">
+        <h2><span class="accent">⟨/⟩</span> Software Projects</h2>
+        <p>Real-time systems, observatory platforms, and mission-critical infrastructure</p>
+      </div>
+
+      <p class="section-heading reveal">Featured Projects</p>
+
+      <!-- Telemetry Dashboard -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="project-card-header">
+          <h3>🚀 Telemetry Dashboard</h3>
+        </div>
+        <p>
+          A real-time dashboard supporting PUS data formats, 3D attitude visualization, and integration
+          with Redis and RabbitMQ for live satellite data streaming and visualization.
+        </p>
+        <div class="project-stack">
+          <span class="pill">Rust</span>
+          <span class="pill">Redis</span>
+          <span class="pill">WebSocket</span>
+          <span class="pill">RabbitMQ</span>
+          <span class="pill">3D Visualization</span>
+        </div>
+        <img src="assets/telemetry.png" alt="Telemetry Dashboard demo" class="project-img" />
+      </div>
+
+      <!-- HabOS -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="project-card-header">
+          <h3>🌌 HabOS - Analogue Mission Control</h3>
+        </div>
+        <p>
+          A mission control interface for analogue astronaut simulations, built with Go and Wails.
+          Supports live telemetry via Redis and WebSockets, weather monitoring, and a time-delay
+          communication system to simulate interplanetary conditions. Includes fallback safety protocols
+          and modular integration for external research feeds.
+        </p>
+        <div class="project-stack">
+          <span class="pill">Go</span>
+          <span class="pill">Wails</span>
+          <span class="pill">WebSocket</span>
+          <span class="pill">Redis</span>
+          <span class="pill purple">Mission Control</span>
+        </div>
+        <img src="assets/hab.jpg" alt="HabOS telemetry dashboard" class="project-img" />
+      </div>
+
+      <!-- Observatory -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+        <div class="project-card-header">
+          <h3>🔭 Observatory Control System</h3>
+        </div>
+        <p>
+          Cloud-based control panel for robotic telescopes, built for the Astrophysics Research Institute.
+          Includes hardware state views, environment sensors, queue-based automation, and live WebSocket
+          telemetry. Deployed to observatory systems and tested in La Palma.
+        </p>
+        <div class="project-stack">
+          <span class="pill">Laravel</span>
+          <span class="pill">Vue.js</span>
+          <span class="pill">WebSocket</span>
+          <span class="pill gold">La Palma</span>
+        </div>
+      </div>
+
+      <p class="section-heading reveal">Other Repositories</p>
+
+      <!-- Other repos grid -->
+      <div class="card reveal">
+        <div class="card-accent-bar"></div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="margin-bottom: 0.4rem;"><a href="https://gitlab.com/dh.heffernan/terramus" target="_blank">🌍
+              Terramus</a></h3>
+          <p>A PHP MVC framework for modular back-end applications demonstrating layered routing, modular controller
+            separation, and basic ORM integration.</p>
+          <div class="project-stack" style="margin-top: 0.6rem;">
+            <span class="pill">PHP</span><span class="pill">MVC</span><span class="pill">ORM</span>
+          </div>
         </div>
 
-        <div class="project">
-          <h3>🌌 HabOS – Analogue Mission Control (Go + WebSocket + Wails)</h3>
-          <p>
-            A mission control interface for analogue astronaut simulations, built with Go and Wails. Supports live telemetry via Redis and WebSockets, weather monitoring, and a time-delay communication system to simulate interplanetary conditions. Includes fallback safety protocols and modular integration for external research feeds.
-          </p>
-          <img src="assets/hab.jpg" alt="HabOS telemetry dashboard screenshot">
-          <!-- <p>
-            <a href="https://github.com/heffernan111/hab" target="_blank">View on GitHub</a>
-          </p> -->
+        <div style="margin-bottom: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.4rem;"><a href="https://gitlab.com/dh.heffernan/acl" target="_blank">🔐 ACL</a>
+          </h3>
+          <p>A PHP implementation for user access control, developed for use with Laravel 5+.</p>
+          <div class="project-stack" style="margin-top: 0.6rem;">
+            <span class="pill">PHP</span><span class="pill">Laravel</span><span class="pill">ACL</span>
+          </div>
         </div>
 
-        <div class="project">
-          <h3>🔭 Observatory Control System (Laravel + Vue.js)</h3>
-          <p>
-            Cloud-based control panel for robotic telescopes, built for the Astrophysics Research Institute.
-            Includes hardware state views, environment sensors, queue-based automation, and live WebSocket telemetry.
-            Deployed to observatory systems and tested in La Palma.
-          </p>
+        <div style="margin-bottom: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.4rem;"><a href="https://github.com/heffernan111/mean_stack" target="_blank">📦
+              MEAN Stack</a></h3>
+          <p>Full-stack boilerplate using MongoDB, Express.js, and Node.js demonstrating REST API integration in a
+            client-server setup.</p>
+          <div class="project-stack" style="margin-top: 0.6rem;">
+            <span class="pill">MongoDB</span><span class="pill">Express</span><span class="pill">Node.js</span>
+          </div>
         </div>
-      </section>
 
-      <section>
-        <div class="project">
-            <h2>Other Repositories</h2>
-    
-            <h3><a href="https://gitlab.com/dh.heffernan/terramus" target="_blank">🌍 Terramus</a></h3>
-            <p>
-              A PHP MVC framework for modular back-end applications. Originally designed as a platform foundation, it demonstrates layered routing, modular controller separation, and basic ORM integration.
-            </p>
-
-            <h3><a href=" https://gitlab.com/dh.heffernan/acl" target="_blank">🌍 ACL</a></h3>
-            <p>
-              A PHP implementation for user access control. Developed for use with Laravel 5+.
-            </p>
-    
-            <h3><a href="https://github.com/heffernan111/mean_stack" target="_blank">📦 MEAN Stack</a></h3>
-            <p>
-              Full-stack boilerplate using MongoDB, Express.js, and Node.js. Built to demonstrate component-based app scaffolding and REST API integration in a client-server setup.
-            </p>
-    
-            <h3><a href="https://github.com/heffernan111/mern_electron" target="_blank">💻 MERN + Electron</a></h3>
-            <p>
-              A full-stack desktop app using React, Express, MongoDB, and Electron.js. Ideal for cross-platform internal tools where offline-first behavior and desktop packaging are priorities.
-            </p>
-    
-            <h3><a href="https://github.com/heffernan111/PopR" target="_blank">🧪 PopR</a></h3>
-            <p>
-               A legacy Java project focused on user interaction, written during the earlier Android/JavaFX transition era.
-            </p>
-    
-            <h3><a href="https://github.com/heffernan111/Hi5" target="_blank">📱 Hi5</a></h3>
-            <p>
-              A legacy Java project focused on mobile device interaction, written during the earlier Android/JavaFX transition era.
-            </p>
-    
+        <div style="padding-top: 1.25rem; border-top: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.4rem;"><a href="https://github.com/heffernan111/mern_electron" target="_blank">💻
+              MERN + Electron</a></h3>
+          <p>A full-stack desktop app using React, Express, MongoDB, and Electron.js for cross-platform internal tools
+            with offline-first behavior.</p>
+          <div class="project-stack" style="margin-top: 0.6rem;">
+            <span class="pill">React</span><span class="pill">Electron</span><span class="pill">MongoDB</span>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <footer>
-        &copy; 2025 David Heffernan
-      </footer>
+      <footer>© 2025 David Heffernan</footer>
     </main>
   </div>
 </body>
+
 </html>
